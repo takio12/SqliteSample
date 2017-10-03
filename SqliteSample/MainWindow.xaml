@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SqliteSample"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="480.263">
     <Grid>
-        
+        <DataGrid x:Name="dataGrid" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="180" Margin="24,10,0,0" VerticalAlignment="Top" Width="438"/>
+        <Button x:Name="buttonLoad" Content="Load" HorizontalAlignment="Left" Margin="97,245,0,0" VerticalAlignment="Top" Width="75" Click="buttonLoad_Click"/>
+        <Button x:Name="buttonAdd" Content="Add" HorizontalAlignment="Left" Margin="328,211,0,0" VerticalAlignment="Top" Width="75" Click="buttonAdd_Click"/>
+        <Button x:Name="buttonSave" Content="Save" HorizontalAlignment="Left" Margin="328,250,0,0" VerticalAlignment="Top" Width="75" Click="buttonSave_Click"/>
+
     </Grid>
 </Window>
